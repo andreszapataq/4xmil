@@ -1,2 +1,2 @@
 # 4xmil
-App to manage "4 x Mil" tax
+App to manage 4 x Mil tax
