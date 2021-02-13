@@ -14,10 +14,15 @@
                 <h1>4xmil</h1>
                 <p>Manager</p>
             </div>
+            <div class="fecha">
+                <p class="mes-actual" id="mes-actual"></p>
+            </div>
         </header>
         <main class="main">
             <div class="main-banner">
-                <div class="main-banner-user">Hola <b>Andres</b></div>
+                <div class="main-banner-user">
+                    <p>Hola <b id="user"></b></p>
+                </div>
                 <div class="main-banner-saldos">
                     <div class="main-banner-cupo">
                         <p class="cupo-mensual" id="cupo-mensual"></p>
@@ -31,43 +36,57 @@
             </div>
             <div class="main-overview">
                 <div class="overviewcard">
-                    <div class="overviewcard-logo">LOGO 1</div>
+                    <div class="overviewcard-logo1">
+                        <img src="images/nequi.png" alt="">
+                    </div>
                 </div>
                 <div class="overviewcard">
                     <div class="overviewcard-bank1" id="overviewcard-bank1"></div>
                 </div>
                 <div class="overviewcard">
-                    <div class="overviewcard-logo">LOGO 2</div>
+                    <div class="overviewcard-logo2">
+                        <img src="images/daviplata.png" alt="">
+                    </div>
                 </div>
                 <div class="overviewcard">
                     <div class="overviewcard-bank2" id="overviewcard-bank2"></div>
                 </div>
             </div>
             <div class="main-inputs">
-                <div class="inputs-bank1">
-                    <input type="date" placeholder="Fecha">
-                    <input type="text" placeholder="Concepto">
-                    <input type="text" placeholder="Valor">
-                </div>
-                <div class="inputs-bank2">
-                    <input type="date" placeholder="Fecha">
-                    <input type="text" placeholder="Concepto">
-                    <input type="text" placeholder="Valor">
-                </div>
+                <form class="inputs-bank1" id="inputs-bank1">
+                    <input type="date" placeholder="Fecha" id="fechaBank1">
+                    <input type="text" placeholder="Concepto" id="conceptoBank1">
+                    <input type="text" placeholder="Valor" id="valorBank1">
+                    <button type="submit">Enviar</button>
+                </form>
+                <form class="inputs-bank2" id="inputs-bank2">
+                    <input type="date" placeholder="Fecha" id="fechaBank2">
+                    <input type="text" placeholder="Concepto" id="conceptoBank2">
+                    <input type="text" placeholder="Valor" id="valorBank2">
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
             <div class="main-history">
                 <div class="main-history1">
-                    <h4>Histórico</h4>
-                    <div class="list-history1"></div>
+                    <h3>Historial</h3>
+                    <div class="list-history1" id="list-history1">
+                        <!-- DATA FROM DB -->
+                    </div>
                 </div>
                 <div class="main-history2">
-                    <h4>Histórico</h4>
-                    <div class="list-history2"></div>
+                    <h3>Historial</h3>
+                    <div class="list-history2" id="list-history2">
+                        <!-- DATA FROM DB -->
+                    </div>
                 </div>
             </div>
         </main>
         <footer class="footer">
-            <div class="footer_copyright">&copy; 2020 andreszapata.me</div>
+            <div class="footer_copyright">&copy; 2021 andreszapata.me</div>
+            <div class="footer_api">
+                <p id="api_location">My GitHub Location</p>
+                <p id="api_response"></p>
+            </div>
             <div class="footer_signature">Made with ❤️ by Andres Zapata</div>
         </footer>
     </div>

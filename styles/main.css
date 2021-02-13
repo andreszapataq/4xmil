@@ -20,11 +20,18 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
     grid-area: header;
 }
 
 .header-title {
     margin-left: 10px;
+}
+
+.mes-actual {
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 
 .main {
@@ -72,6 +79,16 @@ body {
     background-color: #E4E4E4;
 }
 
+.overviewcard-logo1, .overviewcard-logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 75%;
+}
+
 .overviewcard-bank1, .overviewcard-bank2 {
     font-size: 1.7em;
 }
@@ -86,7 +103,7 @@ body {
 
 .inputs-bank1, .inputs-bank2 {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
     gap: 10px;
 }
 
@@ -104,6 +121,31 @@ input {
 .list-history1, .list-history2 {
     height: 200px;
     background-color: #EAEAEA;
+    overflow: auto;
+}
+
+.reg1, .reg2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr .7fr;
+    padding: 10px 30px 10px 0px;
+}
+
+input[type=date] { 
+    font-size: 0.9em;
+}
+
+.date, .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222222;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #222222;
 }
 
 .footer {
@@ -116,4 +158,12 @@ input {
     justify-content: space-between;
     padding: 0 20px;
     background-color: #F2F2F2;
+}
+
+.footer_api{
+    text-align: center;
+}
+
+#api_location {
+    cursor: pointer;
 }
