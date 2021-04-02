@@ -1,7 +1,7 @@
 const Cuenta = require("../models/cuentaModel");
 const schedule = require('node-schedule');
 
-schedule.scheduleJob('* * * 1 * *', () => {
+schedule.scheduleJob('0 0 0 1 * *', () => {
     console.log('Actualizando cupos')
     nuevoMes()
 });
